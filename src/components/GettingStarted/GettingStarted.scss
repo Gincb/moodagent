@@ -1,0 +1,11 @@
+@import '../../style/variables.scss';
+
+.getting_started-wrapper{
+  padding: 3em;
+}
+
+.heading {
+  font-size: $headline-font_size;
+  font-weight: $headline-font_weight;
+  margin-bottom: 1em;
+}

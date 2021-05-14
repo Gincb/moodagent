@@ -1,3 +1,36 @@
+@import '../../style/variables.scss';
+
+.subheading {
+  font-size: $subheadline-font_size;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
 .install-button {
   border-radius: 20px;
+  margin: 0 0.5em 2em 0;
+}
+
+ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  margin: 0 0 2em 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  font-size: $body-font_size;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: $accent-color;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  top: 0;
+  text-align: center;
 }

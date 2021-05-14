@@ -1,10 +1,10 @@
-@use './style/variables.scss' as *;
+@import './style/variables.scss';
 @import "~bootstrap/scss/bootstrap";
 
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font;
   background-color: black;
   color: white;
 }
