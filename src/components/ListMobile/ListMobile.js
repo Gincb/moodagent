@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 
 function ListMobile(props) {
   return (
-    <article>
+    <article className='list'>
       <h2 className='subheading'>{props.subheadingText}</h2>
       <ol>
         <ListItem listItemContent='Download the Moodagent app here:'/>

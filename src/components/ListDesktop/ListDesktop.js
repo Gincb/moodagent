@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button'
 
 function ListDesktop(props) {
   return (
-    <article>
+    <article className='list'>
       <h2 className='subheading'>{props.subheadingText}</h2>
       <ol>
         <ListItem listItemContent='If you already have a Moodagent account, continue to the next step. If not, follow the steps above to create your account using our mobile app.'/>
