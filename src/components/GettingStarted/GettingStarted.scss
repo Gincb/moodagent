@@ -1,10 +1,16 @@
 @import '../../style/variables.scss';
+@import '../../style//mediaQueries.scss';
+
 
 
 .getting_started-wrapper{
   width: 100%;
-  padding: 0;
+  padding: 6vh 0 0 0;
   margin: 0;
+
+  @include mediaQuery(desktop) {
+    padding-left: 10em;
+  }
 
   .heading {
     font-size: $headline-font_size;
